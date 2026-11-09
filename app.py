@@ -19,7 +19,7 @@ if st.button("Roadmap Banao"):
             try:
                 client = Groq(api_key=api_key)
                 response = client.chat.completions.create(
-                    model="llama-3.3-70b-versatile",
+                    model="openai/gpt-oss-20b",
                     messages=[
                         {"role": "user", "content": f"Mujhe {goal} ke liye step by step detailed roadmap banao, Roman Urdu me, beginner se advanced tak. Har week kya seekhna hai, wo bhi batao."}
                     ]
